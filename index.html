@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>TITULO</title>
+  <script type="text/javascript" src="lib/descartes-min.js" charset="utf-8"></script>
+</head>
+
+<body style="margin:0; background:#eff0f1;">
+  <link rel="stylesheet" href="fonts/style.css" type="text/css">
+
+  <div align="center">
+    <ajs name="Descartes" code="Descartes" width="790" height="500">
+      <param name="tamaño" value="790x500">
+      <param name="decimal_symbol" value=".">
+      <param name="image_loader" value="images/transp_1x1.png">
+      <param name="expand" value="fit">
+      <param name="nombre" value="Descartes">
+      <param name="Versión" value="5.5">
+      <param name="editable" value="no">
+      <param name="Idioma" value="español">
+      <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=40 ">
+      <param name="E_01" value="tipo='R2' id='E1' ancho='100%' alto='100%' fijo='sí' escala='50' O.x='-50%' O.y='50%' fondo='00c0ff' red='no' red10='no' ejes='no' ">
+      <param name="E_02" value="tipo='R2' id='P1' x='g1.x*50-395' y='90' ancho='100%' alto='70' escala='50' fondo='f0f8fa' red='no' red10='no' ejes='no' sensible_a_los_movimientos_del_ratón='sí' ">
+      <param name="E_03" value="tipo='R2' id='P2' x='g2.x*50-395' y='180' ancho='100%' alto='70' escala='50' fondo='f0f8fa' red='no' red10='no' ejes='no' sensible_a_los_movimientos_del_ratón='sí' ">
+      <param name="E_04" value="tipo='R2' id='P3' x='g3.x*50-395' y='270' ancho='100%' alto='70' escala='50' fondo='f0f8fa' red='no' red10='no' ejes='no' sensible_a_los_movimientos_del_ratón='sí' ">
+      <param name="E_05" value="tipo='R2' id='P4' x='g4.x*50-395' y='360' ancho='100%' alto='70' escala='50' fondo='f0f8fa' red='no' red10='no' ejes='no' sensible_a_los_movimientos_del_ratón='sí' ">
+      <param name="E_06" value="tipo='R2' id='mascara' ancho='100%' alto='100%' fijo='sí' escala='50' O.x='-50%' O.y='50%' fondo='ffffffff' red='no' red10='no' ejes='no' ">
+      <param name="C_01" value="id='g1' tipo='gráfico' espacio='mascara' color='222222' color-int='f0f8ff' tamaño='20' expresión='(7.9,7.5)' constricción='(y=7.5)' imagen='images/boton.png' activo-si='ver=0' ">
+      <param name="C_02" value="id='g2' tipo='gráfico' espacio='mascara' color='222222' color-int='f0f8ff' tamaño='20' expresión='(7.9,5.7)' constricción='(y=5.7)' imagen='images/boton.png' activo-si='ver=0' ">
+      <param name="C_03" value="id='g3' tipo='gráfico' espacio='mascara' color='222222' color-int='f0f8ff' tamaño='20' expresión='(7.9,3.9)' constricción='(y=3.9)' imagen='images/boton.png' activo-si='ver=0' ">
+      <param name="C_04" value="id='g4' tipo='gráfico' espacio='mascara' color='222222' color-int='f0f8ff' tamaño='20' expresión='(7.9,2.1)' constricción='(y=2.1)' imagen='images/boton.png' activo-si='ver=0' ">
+      <param name="C_05" value="id='veri' interfaz='botón' tipo='numérico' región='interior' espacio='mascara' nombre='Verificar' expresión='((E1._w-180)/2-10,440,200,46)' color='ffffff' color-int='fec639' fuente puntos='22' imagen='vacio.gif' acción='calcular' parámetro='ver=1;buenas=buenas+(rc1=rta1)+(rc2=rta2)+(rc3=rta3)+(rc4=rta4);nota=(buenas*Nmax[1]/4);var1=nota;parent.set(&squot;var1&squot;,var1);parent.update()' dibujar-si='(termina=4)&(ver=0)' extra_style='border=3|borderRadius=10|borderColor=ffffff|overColor=e0a12b|downColor=e0a12b|inactiveColor=b0b0b0|font=Monospace|shadowTextColor=a6620e|shadowBoxColor=808080|shadowInsetBoxColor=b46100' ">
+      <param name="A_01" value="id='aleatoriedad()' algoritmo='sí' expresión='0' hacer='r1=ent(rnd*2);r2=ent(rnd*2);r3=ent(rnd*2);r4=ent(rnd*2);;iniciapermutacionSI();permutaSI(sumaSI);iniciapermutacionNO();permutaNO(sumaNO);;;preg1=(r1=1)?SI[permutacionSI[0]+1]:NO[permutacionNO[0]+1];preg2=(r2=1)?SI[permutacionSI[1]+1]:NO[permutacionNO[1]+1];preg3=(r3=1)?SI[permutacionSI[2]+1]:NO[permutacionNO[2]+1];preg4=(r4=1)?SI[permutacionSI[3]+1]:NO[permutacionNO[3]+1];;rc1=(r1=1)?&squot;si&squot;:&squot;no&squot;);rc2=(r2=1)?&squot;si&squot;:&squot;no&squot;);rc3=(r3=1)?&squot;si&squot;:&squot;no&squot;);rc4=(r4=1)?&squot;si&squot;:&squot;no&squot;);' tipo='función' ">
+      <param name="A_02" value="id='Nmax' vector='sí' evaluar='una-sola-vez' tamaño='3' expresión='Nmax[0]=0;Nmax[1]=0;Nmax[2]=0' archivo='textos/N_maxima.txt' tipo='vector' ">
+      <param name="A_03" value="id='SI' vector='sí' evaluar='una-sola-vez' tamaño='50' archivo='textos/SI.txt' tipo='vector' ">
+      <param name="A_04" value="id='NO' vector='sí' evaluar='una-sola-vez' tamaño='50' expresión='NO[0]=0;NO[1]=0;NO[2]=0' archivo='textos/NO.txt' tipo='vector' ">
+      <param name="A_05" value="id='arrastre()' algoritmo='sí' expresión='0' hacer='g1.x=(g1.x<7.6)?6.3:g1.x;g1.x=(g1.x>8.3)?9.5:g1.x;g2.x=(g2.x<7.6)?6.3:g2.x;g2.x=(g2.x>8.3)?9.5:g2.x;g3.x=(g3.x<7.6)?6.3:g3.x;g3.x=(g3.x>8.3)?9.5:g3.x;g4.x=(g4.x<7.6)?6.3:g4.x;g4.x=(g4.x>8.3)?9.5:g4.x;;g1.x=(g1.x>=7.6)&(g1.x<=8.3)?7.9:g1.x;g2.x=(g2.x>=7.6)&(g2.x<=8.3)?7.9:g2.x;g3.x=(g3.x>=7.6)&(g3.x<=8.3)?7.9:g3.x;g4.x=(g4.x>=7.6)&(g4.x<=8.3)?7.9:g4.x' tipo='función' ">
+      <param name="A_06" value="id='cuentaSI()' algoritmo='sí' expresión='0' inicio='si=0;sumaSI=0' hacer='si=si+1;sumaSI=(SI[si]!=0)?sumaSI+1:sumaSI' mientras='si<49' tipo='función' ">
+      <param name="A_07" value="id='cuentaNO()' algoritmo='sí' expresión='0' inicio='no=0;sumaNO=0' hacer='no=no+1;sumaNO=(NO[no]!=0)?sumaNO+1:sumaNO' mientras='no<49' tipo='función' ">
+      <param name="A_08" value="id='iniciapermutacionSI()' algoritmo='sí' expresión='0' inicio='i=0' hacer='permutacionSI[i]=i;i=i+1;' mientras='i<50' tipo='función' ">
+      <param name="A_09" value="id='permutaSI(n)' algoritmo='sí' expresión='0' inicio='i=0' hacer='j=ent(n*rnd);k=ent(n*rnd);paso=permutacionSI[j];permutacionSI[j]=permutacionSI[k];permutacionSI[k]=paso;i=i+1' mientras='i<=n*n' tipo='función' ">
+      <param name="A_10" value="id='iniciapermutacionNO()' algoritmo='sí' expresión='0' inicio='i=0' hacer='permutacionNO[i]=i;i=i+1;' mientras='i<8' tipo='función' ">
+      <param name="A_11" value="id='permutaNO(n)' algoritmo='sí' expresión='0' inicio='i=0' hacer='j=ent(n*rnd);k=ent(n*rnd);paso=permutacionNO[j];permutacionNO[j]=permutacionNO[k];permutacionNO[k]=paso;i=i+1' mientras='i<=n*n' tipo='función' ">
+      <param name="A_12" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' hacer='cuentaSI();cuentaNO();aleatoriedad();' ">
+      <param name="A_13" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' inicio='rta1=&squot;&squot;;rta2=&squot;&squot;;rta3=&squot;&squot;;rta4=&squot;&squot;;termina=0' hacer='arrastre();rta1=(g1.x=9.5)?&squot;si&squot;:((g1.x=6.3)?&squot;no&squot;:rta1);rta2=(g2.x=9.5)?&squot;si&squot;:((g2.x=6.3)?&squot;no&squot;:rta2);rta3=(g3.x=9.5)?&squot;si&squot;:((g3.x=6.3)?&squot;no&squot;:rta3);rta4=(g4.x=9.5)?&squot;si&squot;:((g4.x=6.3)?&squot;no&squot;:rta4);termina=(rta1!=&squot;&squot;)+(rta2!=&squot;&squot;)+(rta3!=&squot;&squot;)+(rta4!=&squot;&squot;);;' ">
+      <param name="G_01" value="espacio='mascara' tipo='imagen' coord_abs='no' expresión='(g1.x+7.44,8.45)' archivo='images/NO.png' ">
+      <param name="G_02" value="espacio='mascara' tipo='imagen' coord_abs='no' expresión='(g1.x-9.94,8.6)' archivo='images/SI.png' ">
+      <param name="G_03" value="espacio='mascara' tipo='imagen' coord_abs='no' expresión='(g2.x+7.44,6.65)' archivo='images/NO.png' ">
+      <param name="G_04" value="espacio='mascara' tipo='imagen' coord_abs='no' expresión='(g2.x-9.94,6.8)' archivo='images/SI.png' ">
+      <param name="G_05" value="espacio='mascara' tipo='imagen' coord_abs='no' expresión='(g3.x+7.44,4.85)' archivo='images/NO.png' ">
+      <param name="G_06" value="espacio='mascara' tipo='imagen' coord_abs='no' expresión='(g3.x-9.94,5)' archivo='images/SI.png' ">
+      <param name="G_07" value="espacio='mascara' tipo='imagen' coord_abs='no' expresión='(g4.x+7.44,3.05)' archivo='images/NO.png' ">
+      <param name="G_08" value="espacio='mascara' tipo='imagen' coord_abs='no' expresión='(g4.x-9.94,3.2)' archivo='images/SI.png' ">
+      <param name="G_09" value="espacio='P1' tipo='texto' color='20303a' coord_abs='sí' expresión='[100,0,590,70]' texto='[preg1]' ancho='590' font_family='Monospaced' align='a_left' anchor='a_top_left' ">
+      <param name="G_10" value="espacio='P2' tipo='texto' color='20303a' coord_abs='sí' expresión='[100,0,590,70]' texto='[preg2]' ancho='590' font_family='Monospaced' align='a_left' anchor='a_top_left' ">
+      <param name="G_11" value="espacio='P3' tipo='texto' color='20303a' coord_abs='sí' expresión='[100,0,590,70]' texto='[preg3]' ancho='590' font_family='Monospaced' align='a_left' anchor='a_top_left' ">
+      <param name="G_12" value="espacio='P4' tipo='texto' color='20303a' coord_abs='sí' expresión='[100,0,590,70]' texto='[preg4]' ancho='590' font_family='Monospaced' align='a_left' anchor='a_top_left' ">
+      <param name="G_13" value="espacio='P1' tipo='imagen' dibujar-si='(rc1=rta1)&(ver)' coord_abs='no' expresión='(0,0,1,1)' archivo='images/verdadero.png' ">
+      <param name="G_14" value="espacio='P1' tipo='imagen' dibujar-si='(rc1!=rta1)&(ver)' coord_abs='no' expresión='(0,0,1,1)' archivo='images/falso.png' ">
+      <param name="G_15" value="espacio='P2' tipo='imagen' dibujar-si='(rc2=rta2)&(ver)' coord_abs='no' expresión='(0,0,1,1)' archivo='images/verdadero.png' ">
+      <param name="G_16" value="espacio='P3' tipo='imagen' dibujar-si='(rc3=rta3)&(ver)' coord_abs='no' expresión='(0,0,1,1)' archivo='images/verdadero.png' ">
+      <param name="G_17" value="espacio='P4' tipo='imagen' dibujar-si='(rc4=rta4)&(ver)' coord_abs='no' expresión='(0,0,1,1)' archivo='images/verdadero.png' ">
+      <param name="G_18" value="espacio='P2' tipo='imagen' dibujar-si='(rc2!=rta2)&(ver)' coord_abs='no' expresión='(0,0,1,1)' archivo='images/falso.png' ">
+      <param name="G_19" value="espacio='P3' tipo='imagen' dibujar-si='(rc3!=rta3)&(ver)' coord_abs='no' expresión='(0,0,1,1)' archivo='images/falso.png' ">
+      <param name="G_20" value="espacio='P4' tipo='imagen' dibujar-si='(rc4!=rta4)&(ver)' coord_abs='no' expresión='(0,0,1,1)' archivo='images/falso.png' ">
+      <param name="G_21" value="espacio='E1' tipo='texto' color='ffffff' coord_abs='sí' expresión='[390,25]' texto='Arrastra hacia la derecha las afirmaciones que son correctas y hacia la izquierda las que no lo son' ancho='600' font_family='Monospaced' fuente puntos='20' align='a_center' anchor='a_top_center' shadowColor='000000' shadowOffsetX='2' shadowOffsetY='1' ">
+      <param name="G_22" value="espacio='E1' tipo='texto' color='30afffb3' dibujar-si='(ver)&(buenas=4)' coord_abs='sí' expresión='[390,440,790,10]' texto='¡Excelente! Todas las respuestas son correctas' decimales='0' ancho='790' font_family='Monospaced' fuente puntos='20' align='a_center' anchor='a_top_center' shadowColor='000000' shadowOffsetX='2' shadowOffsetY='1' ">
+      <param name="G_23" value="espacio='E1' tipo='texto' color='2cffe900' dibujar-si='(ver)&(buenas=3)' coord_abs='sí' expresión='[390,440,790,10]' texto='Tienes tres respuestas correctas' decimales='0' ancho='790' font_family='Monospaced' fuente puntos='20' align='a_center' anchor='a_top_center' shadowColor='000000' shadowOffsetX='2' shadowOffsetY='1' ">
+      <param name="G_24" value="espacio='E1' tipo='texto' color='2cffc000' dibujar-si='(ver)&(buenas=2)' coord_abs='sí' expresión='[390,440,790,10]' texto='Tienes dos respuestas correctas' decimales='0' ancho='790' font_family='Monospaced' fuente puntos='20' align='a_center' anchor='a_top_center' shadowColor='000000' shadowOffsetX='2' shadowOffsetY='1' ">
+      <param name="G_25" value="espacio='E1' tipo='texto' color='41ff8a00' dibujar-si='(ver)&(buenas=1)' coord_abs='sí' expresión='[390,440,790,10]' texto='¡Deficiente! Sólo una respuesta buena' decimales='0' ancho='790' font_family='Monospaced' fuente puntos='20' align='a_center' anchor='a_top_center' shadowColor='000000' shadowOffsetX='2' shadowOffsetY='1' ">
+      <param name="G_26" value="espacio='E1' tipo='texto' color='59ff0000' dibujar-si='(ver)&(buenas=0)' coord_abs='sí' expresión='[390,440,790,10]' texto='Vaya ¡Qué mal! Ni una sóla respuesta buena' decimales='0' ancho='790' font_family='Monospaced' fuente puntos='20' align='a_center' anchor='a_top_center' shadowColor='000000' shadowOffsetX='2' shadowOffsetY='1' ">
+      <param name="G_27" value="espacio='E1' tipo='texto' color='ffffff' dibujar-si='ver' coord_abs='sí' expresión='[390,470,790,10]' texto='Tu nota es: [nota]' decimales='1' ancho='790' color_borde_texto='000000' negrita='sí' font_family='Monospaced' fuente puntos='22' align='a_center' anchor='a_top_center' shadowColor='000000' shadowOffsetX='2' shadowOffsetY='1' ">
+    </ajs>
+  </div>
+
+<script type="descartes/vectorFile" id="textos/N_maxima.txt">
+'Nota máxima'
+10
+</script>
+
+<script type="descartes/vectorFile" id="textos/SI.txt">
+'Escribe, al menos, cuatro afirmaciones correctas'
+'Dados los conjuntos A = (1, 2, 3) y B = (4, 5, 6) y la relación C = ((x, y) tal que x pertenece a A, y pertenece a B, x + y > 5), ¿(2, 4) pertenece a C?'
+'Dados los conjuntos A = (0, 1, 2) y B = (3, 5, 7) y la relación D = ((x, y) tal que x pertenece a A, y pertenece a B, x * y > 6), ¿(2, 5) pertenece a D?'
+'Dados los conjuntos A = (1, 3) y B = (4, 8) y la relación E = ((x, y) tal que x pertenece a A, y pertenece a B, y - x > 3), ¿(1, 8) pertenece a E?'
+'Dados los conjuntos A = (2, 4, 6) y B = (1, 3, 5) y la relación Z = ((x, y) tal que x pertenece a A, y pertenece a B, x > y), ¿(4, 1) pertenece a Z?'
+'Dados los conjuntos A = (1, 5) y B = (10, 15) y la relación M = ((x, y) tal que x pertenece a A, y pertenece a B, y / x = 3), ¿(5, 15) pertenece a M?'
+'Dados los conjuntos A = (3, 6) y B = (12, 18) y la relación N = ((x, y) tal que x pertenece a A, y pertenece a B, y = 6x), ¿(3, 18) pertenece a N?'
+'Dados los conjuntos A = (2, 5) y B = (7, 9) y la relación P = ((x, y) tal que x pertenece a A, y pertenece a B, x + y > 10), ¿(5, 7) pertenece a P?'
+'Dados los conjuntos A = (1, 4) y B = (8, 16) y la relación Q = ((x, y) tal que x pertenece a A, y pertenece a B, y = 4x), ¿(4, 16) pertenece a Q?'
+'Dados los conjuntos A = (1, 2, 3) y B = (3, 6, 9) y la relación R = ((x, y) tal que x pertenece a A, y pertenece a B, y > x^2), ¿(2, 6) pertenece a R?'
+'Dados los conjuntos A = (0, 2) y B = (4, 8) y la relación S = ((x, y) tal que x pertenece a A, y pertenece a B, y = 2x^2), ¿(2, 8) pertenece a S?'
+
+</script>
+
+<script type="descartes/vectorFile" id="textos/NO.txt">
+'Escribe, al menos, cuatro afirmaciones incorrectas'
+'Dados los conjuntos A = (1, 2, 3) y B = (4, 5, 6) y la relación T = ((x, y) tal que x pertenece a A, y pertenece a B, x + y < 5), ¿(2, 4) pertenece a T?'
+'Dados los conjuntos A = (2, 3) y B = (5, 7) y la relación U = ((x, y) tal que x pertenece a A, y pertenece a B, x * y < 10), ¿(3, 7) pertenece a U?'
+'Dados los conjuntos A = (0, 1, 2) y B = (3, 5) y la relación V = ((x, y) tal que x pertenece a A, y pertenece a B, x - y > 0), ¿(1, 5) pertenece a V?'
+'Dados los conjuntos A = (4, 6) y B = (8, 12) y la relación W = ((x, y) tal que x pertenece a A, y pertenece a B, y / x = 1), ¿(4, 8) pertenece a W?'
+'Dados los conjuntos A = (1, 5) y B = (10, 20) y la relación X = ((x, y) tal que x pertenece a A, y pertenece a B, y = 2x), ¿(1, 20) pertenece a X?'
+'Dados los conjuntos A = (3, 7) y B = (14, 21) y la relación Y = ((x, y) tal que x pertenece a A, y pertenece a B, y = 3x), ¿(7, 14) pertenece a Y?'
+'Dados los conjuntos A = (2, 4) y B = (8, 16) y la relación Z = ((x, y) tal que x pertenece a A, y pertenece a B, y = x + 10), ¿(4, 16) pertenece a Z?'
+'Dados los conjuntos A = (1, 2, 3) y B = (6, 9) y la relación M = ((x, y) tal que x pertenece a A, y pertenece a B, x^2 > y), ¿(3, 9) pertenece a M?'
+'Dados los conjuntos A = (0, 2, 4) y B = (8, 16) y la relación N = ((x, y) tal que x pertenece a A, y pertenece a B, y = 8 - x), ¿(4, 16) pertenece a N?'
+'Dados los conjuntos A = (5, 10) y B = (15, 25) y la relación P = ((x, y) tal que x pertenece a A, y pertenece a B, y / x = 1), ¿(10, 25) pertenece a P?'
+</script>
+</script>
+</body>
+</html>
